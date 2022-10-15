@@ -41,7 +41,7 @@ function App() {
         
         {times.map(time => {
             return <Time 
-              employees = {employees}
+              employees = {employees.filter(employee => employee.time === time.name)}
               key={time.key.toString()}
               name={time.name}
               ocupation={time.ocupation}
