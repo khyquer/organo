@@ -6,12 +6,10 @@ import Button from '../Button';
 
 function Form(props){
 
-
-
-    const [name, setName] = useState();
-    const [ocupation, setOcupation] = useState();
-    const [image, setImage] = useState();
-    const [time, setTime] = useState();  
+    const [name, setName] = useState('');
+    const [ocupation, setOcupation] = useState('');
+    const [image, setImage] = useState('');
+    const [time, setTime] = useState('');  
 
     const callBackSubmit = (e) => {
         props.newEmployee({

@@ -12,7 +12,8 @@ const Combobox = (props) => {
                 required={props.required}
                 value={props.value}
             >
-                {props.itens.map((item) => <option key={item.key}>{item.name}</option>)}                    
+                <option key="0" defaultValue></option>
+                {props.itens.map((item) => <option key={item.key.toString()}>{item.name}</option>)}                    
             </select>
         </div>
     )
