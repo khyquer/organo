@@ -7,8 +7,12 @@ const Combobox = (props) => {
             <label>
                 {props.label}
             </label>
-            <select>
-                {props.itens.map((item, index) => <option key={item.key}>{item.name}</option>)}                    
+            <select
+                onChange={(e) => props.onChangeEvent(e.target.value)}
+                required={props.required}
+                value={props.value}
+            >
+                {props.itens.map((item) => <option key={item.key}>{item.name}</option>)}                    
             </select>
         </div>
     )

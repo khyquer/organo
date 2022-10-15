@@ -9,7 +9,7 @@ const TextField = (props) => {
             <label>
                 {props.label}
             </label>
-            <input placeholder={placeholderModification}/>
+            <input value={props.value} onChange={(e) => props.onChangeEvent(e.target.value)} placeholder={placeholderModification} required={props.required}/>
         </div>
     )
 }
