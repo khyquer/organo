@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Banner from './components/Banner'
+import Footer from './components/Footer';
 import Form from './components/Form';
 import Time from './components/Time';
 
@@ -49,6 +50,8 @@ function App() {
               colorSecond={time.colorSecond}
             />
           })}
+
+          <Footer />
     </div>
   );
 }

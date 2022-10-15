@@ -18,6 +18,11 @@ function Form(props){
             image,
             time
         })
+
+        setName('')
+        setOcupation('')
+        setImage('')
+        setTime('')
     }
 
     return (

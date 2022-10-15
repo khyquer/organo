@@ -7,7 +7,7 @@ const Time = (props) => {
     const h3BorderColor = {borderColor: props.colorFirst}
 
     return (
-        <section className="time" style={sectionBackgroundColor}>
+        (props.employees.length > 0) && <section className="time" style={sectionBackgroundColor}>
             <h3 style={h3BorderColor}>
                 {props.name}
             </h3>
