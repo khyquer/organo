@@ -30,9 +30,8 @@ function App() {
   const [employees, setEmployees] = useState([])
 
   const newEmployee = (value) => {
+    debugger
     setEmployees([...employees, value])
-
-    console.log(employees);
   }
 
   return (

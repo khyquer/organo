@@ -14,8 +14,9 @@ const Time = (props) => {
             <div className="employees">
                 {props.employees.map( (employee) => {
                     return <Employee
+                        key={employee.name}
                         headerColor={props.colorFirst}
-                        image="https://github.com/khyquer.png"
+                        image={employee.image}
                         name={employee.name}
                         ocupation={employee.ocupation}
                     />
